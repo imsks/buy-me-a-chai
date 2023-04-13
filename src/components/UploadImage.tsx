@@ -8,7 +8,19 @@ const UploadImage: React.FC<UploadImageProps> = ({ isOpen, closeModal }) => {
     const [buttonTxt, setButtonTxt] = useState<string>("Upload")
     const [file, setFile] = useState<File | null>(null)
     const { contract, account, updateImages } = useData()
-    const client = create({ url: "https://ipfs.infura.io:5001/api/v0" })
+
+    const client = create({
+        host: "ipfs.infura.io",
+        port: 5001,
+        protocol: "https",
+        headers: {
+            authorization:
+                "Basic " +
+                Buffer.from(
+                    process.env.PROJECT_ID + ":" + process.env.PROJECT_SECRET
+                ).toString("base64")
+        }
+    })
     const [description, setDescription] = useState<string>("")
 
     const uploadImage = async () => {

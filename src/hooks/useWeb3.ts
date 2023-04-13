@@ -33,7 +33,8 @@ const useWeb3 = () => {
         const web3 = window.web3
         var allAccounts = await web3.eth.getAccounts()
         setAccount(allAccounts[0])
-        const networkData = DonationContract.networks["5777"]
+        const networkId = (await web3.eth.net.getId()) as "5777" | 80001
+        const networkData = DonationContract.networks[networkId]
         if (networkData) {
             var tempContract = new web3.eth.Contract(
                 DonationContract.abi,
