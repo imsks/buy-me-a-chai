@@ -9756,10 +9756,16 @@
       "links": {},
       "address": "0x9947FDB6E2F195d60525810c346C7B1fa4723368",
       "transactionHash": "0x1328550118bfefbb2362c06d19187c092bceca9cd114656b0dc5ce3ddbb0729d"
+    },
+    "80001": {
+      "events": {},
+      "links": {},
+      "address": "0xFd6fc841397979FAe3F70ae1678f84eA4aE6d93e",
+      "transactionHash": "0xe23588cfb62d129ff5f9d2948a685ed632bab78cf307ba8eb61fae66e8a31f88"
     }
   },
   "schemaVersion": "3.4.13",
-  "updatedAt": "2023-04-13T03:30:35.070Z",
+  "updatedAt": "2023-04-13T04:35:19.685Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

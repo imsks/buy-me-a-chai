@@ -20,3 +20,8 @@ export interface BodyItemProps {
     hash: string
     id: string
 }
+
+export interface UploadImageProps {
+    isOpen: boolean
+    closeModal: () => void
+}

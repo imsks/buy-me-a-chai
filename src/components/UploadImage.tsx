@@ -1,17 +1,10 @@
 import { useData } from "@/context"
+import { UploadImageProps } from "@/interfaces"
 import { Dialog, Transition } from "@headlessui/react"
 import { create } from "ipfs-http-client"
 import { Fragment, useState } from "react"
 
-interface UploadImageProps {
-    isOpen: boolean
-    closeModal: () => void
-}
-
-export const UploadImage: React.FC<UploadImageProps> = ({
-    isOpen,
-    closeModal
-}) => {
+const UploadImage: React.FC<UploadImageProps> = ({ isOpen, closeModal }) => {
     const [buttonTxt, setButtonTxt] = useState<string>("Upload")
     const [file, setFile] = useState<File | null>(null)
     const { contract, account, updateImages } = useData()
@@ -125,3 +118,5 @@ export const UploadImage: React.FC<UploadImageProps> = ({
         </>
     )
 }
+
+export default UploadImage

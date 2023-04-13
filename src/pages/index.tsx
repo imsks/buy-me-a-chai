@@ -1,4 +1,4 @@
-import { Body, Header } from "@/components"
+import { Body, Header, UploadImage } from "@/components"
 import { useData } from "@/context"
 import Head from "next/head"
 import { useState } from "react"
