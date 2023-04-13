@@ -18,7 +18,7 @@ export default function Home() {
     return (
         <div className='flex flex-col items-center justify-start min-h-screen py-2'>
             <Head>
-                <title>Decentragram</title>
+                <title>Buy Me A Chai</title>
                 <link rel='icon' href='/favicon.ico' />
             </Head>
             <UploadImage isOpen={isOpen} closeModal={closeModal} />

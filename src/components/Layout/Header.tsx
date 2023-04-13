@@ -17,7 +17,7 @@ function Header() {
                 <div className='flex flex-row space-x-2 items-center'>
                     <div className='h-5 w-5 rounded-full bg-blue-500'></div>
                     <span className='font-mono text-xl font-bold'>
-                        Decentagram
+                        Buy Me A Chai
                     </span>
                 </div>
                 <div className='flex flex-row space-x-2 items-center'>
