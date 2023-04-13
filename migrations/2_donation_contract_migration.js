@@ -1,5 +1,5 @@
-const DonationContract = artifacts.require("DonationContract")
+const Donation = artifacts.require("Donation")
 
 module.exports = function (deployer) {
-    deployer.deploy(DonationContract)
+    deployer.deploy(Donation)
 }
